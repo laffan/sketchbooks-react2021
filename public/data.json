@@ -1,0 +1,19 @@
+{
+  "intro" : ["Item.jpg", "Item2"],
+  "sketchbooks" : [
+    {
+      "name" : "Sketchbook A",
+      "slug" : "sketchbook-a",
+      "id" : "2007.06.27-2007.09.13",
+      "pages" : 15,
+      "description" : "Started just before my move to Portland, this covers brief visits to Oakland, Denver and Canaan before settling in to a record of camping trips and some preparatory sketches for projects like Points of Pivot.  Finished during a trip back to Canaan in the spring of 2017."
+    },
+    {
+      "name" : "Sketchbook B",
+      "slug" : "sketchbook-b",
+      "id" : "2007.12.10-2008.01.19",
+      "pages" : 15,
+      "description" : "AND Canaan before settling in to a record of camping trips and some preparatory sketches for projects like Points of Pivot.  Finished during a trip back to Canaan in the spring of 2017."
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+.SideNav {
+  border: 1px solid #000;
+
+  &__Link {
+    border: 1px solid green;
+    &--Selected {
+      background: yellow;
+    }
+  }
+}
