@@ -4,18 +4,20 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import App from './components/App';
 import "./scss/main.scss";
 
+
+const { REACT_APP_ROOT_DIR } = process.env;
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter >
+    <BrowserRouter basename={`${REACT_APP_ROOT_DIR}`}>
         <Switch>
           <Route
             exact
-            path={`/`}
+            path={`/sketchbook/:page`}
             render={r => <App routeProps={r} />}
           />
           <Route
-            exact
-            path={`/:page`}
             render={r => <App routeProps={r} />}
           />
         </Switch>

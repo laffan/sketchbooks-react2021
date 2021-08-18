@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
 import { parseISO, format } from 'date-fns'
 
+const { REACT_APP_BASE_DIR } = process.env;
+
+
 function Book({ data, current }) {
 
   // Scroll back to start so lozad works.
@@ -10,9 +13,16 @@ function Book({ data, current }) {
       book.scrollTo(0, 0);
     }
   },[current]);
+  
 
+  console.log( data );
+  console.log( current );
   const pageData = data.sketchbooks.filter(s => s.slug === current)[0];
+  console.log( pageData );
   const pages = new Array(pageData.pages).fill();
+
+  console.log( pages );
+
   const fromISO = pageData.slug.split("--")[0].split('-')[0].split(".").join("-");
   const toISO = pageData.slug.split("--")[0].split('-')[1].split(".").join("-");
   const from = format(parseISO(fromISO), 'LLLL	d, yyyy');
@@ -34,7 +44,7 @@ function Book({ data, current }) {
               key={`${pageData.slug}-cover`}>
               <img
                 data-use-lozad={true}
-                data-src={`/sketchbooks/${pageData.slug}/cover-full.jpg`}
+                data-src={`${REACT_APP_BASE_DIR}/sketchbooks/${pageData.slug}/cover-full.jpg`}
               />
             </span>
             {pages.map((n, i) => {
@@ -43,7 +53,7 @@ function Book({ data, current }) {
               >
                 <img
                   data-use-lozad={true}
-                  data-src={`/sketchbooks/${pageData.slug}/${i + 1}-full.jpg`}
+                  data-src={`${REACT_APP_BASE_DIR}/sketchbooks/${pageData.slug}/${i + 1}-full.jpg`}
                 />
               </span>)
             })}

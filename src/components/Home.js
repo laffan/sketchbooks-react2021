@@ -1,6 +1,8 @@
 import React from 'react';
 import { chunk } from 'lodash'
 import { Link } from "react-router-dom";
+const { REACT_APP_BASE_DIR, REACT_APP_ROOT_URL } = process.env;
+
 
 const rand = (min, max) => Math.floor(Math.random() * (max - min) + min)
 
@@ -24,13 +26,13 @@ function Home({ data, current }) {
     const page = rand(1, +book.pages);
     thumbArray.push({
       name: book.name,
-      src: `/sketchbooks/${book.slug}/${page}-home.jpg`,
-      link: `/${book.slug}`
+      src: `${REACT_APP_BASE_DIR}/sketchbooks/${book.slug}/${page}-home.jpg`,
+      link: `/sketchbook/${book.slug}`
     })
   }
 
   const columns = chunk(thumbArray, (Math.ceil(thumbCount / colCount)));
-  console.log( columns );
+
   return (
     <main className="Home">
       <div className="Home__Wrapper">

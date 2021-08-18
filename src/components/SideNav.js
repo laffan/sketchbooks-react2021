@@ -1,5 +1,8 @@
-import React, { useState, useEffect,useRef } from 'react';
-import { NavLink, Link } from "react-router-dom";
+import React from 'react';
+import { NavLink } from "react-router-dom";
+
+const { REACT_APP_BASE_DIR, REACT_APP_ROOT_URL } = process.env;
+
 
 function SideNav({ sketchbooks }) {
   return (
@@ -14,7 +17,7 @@ function SideNav({ sketchbooks }) {
           >
             <img
               data-use-lozad={true}
-              data-src={`/logo.png`}
+              data-src={`${REACT_APP_BASE_DIR}/logo.png`}
             />
 
           </NavLink>
@@ -23,14 +26,14 @@ function SideNav({ sketchbooks }) {
           return (
             <li key={`link${i}`} >
               <NavLink
-                to={`/${sketchbook.slug}`}
+                to={`/sketchbook/${sketchbook.slug}`}
                 className="SideNav__Link"
                 activeClassName="SideNav__Link--Selected"
               >
                 <img
                   title={sketchbook.name}
                   data-use-lozad={true}
-                  data-src={`/sketchbooks/${sketchbook.slug}/cover-thumb.jpg`}
+                  data-src={`${REACT_APP_BASE_DIR}/sketchbooks/${sketchbook.slug}/cover-thumb.jpg`}
                 />
               </NavLink>
             </li>

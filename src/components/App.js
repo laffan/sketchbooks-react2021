@@ -1,35 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import lozad from 'lozad'
 
+import data from "./../data.json";
+
 import Book from './Book';
 import SideNav from './SideNav';
 import Home from './Home';
 
 function App({ routeProps }) {
+  console.log( routeProps );
 
-  const isHome = routeProps.match.url === "/" && routeProps.match.isExact;
-  const [data, setData] = useState([]);
+  const isHome = routeProps.match.path !== '/sketchbook/:page';
 
-  const getData = () => {
-    fetch('data.json'
-      , {
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      }
-    )
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        myJson.sketchbooks = myJson.sketchbooks.reverse();
-        setData(myJson)
-      });
-  }
-  useEffect(() => {
-    getData()
-  }, []);
 
   /* 
     Lazy Load Images
@@ -45,17 +27,17 @@ function App({ routeProps }) {
     observe();
   }, [observe]);
 
+  useEffect(() => {
+    console.log(data);
+  }, [observe]);
+
   return (
     <div className="Content">
-      {
-        Object.keys(data).length > 0 ? <>
           <SideNav sketchbooks={data.sketchbooks} />
           {isHome
             ? <Home data={data} />
             : <Book data={data} current={routeProps.match.params.page} />
           }
-        </> : <p>Loading ...</p>
-      }
     </div>
   );
 }
