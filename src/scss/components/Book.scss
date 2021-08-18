@@ -16,16 +16,14 @@
     align-items: center;
     height: 100vh;
     padding-left: 150px;
-      overflow-x: scroll;
-
+    overflow-x: scroll;
+    width: 100%;
   }
 
   &__Content {
     display: grid;
     grid-template-columns: 300px 1fr;
     @include no-scrollbars();
-
-
   }
 
   &__IntroductionWrapper {
@@ -35,7 +33,6 @@
     padding-right: 50px;
   }
   &__Introduction {
-
     h5 {
       @extend .Sans;
       margin: 3px 0;
@@ -48,7 +45,7 @@
 
     p {
       @extend .Serif;
-      font-size: 18px;;
+      font-size: 18px;
       line-height: 22px;
     }
   }

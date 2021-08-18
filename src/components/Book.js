@@ -65,7 +65,7 @@ function Book({ data, current }) {
 
       </div>
         </ScrollContainer >
-      <div className="Book__ScrollMessage">Drag to scroll »</div>
+      <div className="Book__ScrollMessage">Scroll »</div>
     </main>
   )
 }
