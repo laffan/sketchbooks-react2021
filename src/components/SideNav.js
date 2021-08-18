@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
-const { REACT_APP_BASE_DIR, REACT_APP_ROOT_URL } = process.env;
+const { REACT_APP_BASE_DIR } = process.env;
 
 
 function SideNav({ sketchbooks }) {

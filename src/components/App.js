@@ -27,9 +27,6 @@ function App({ routeProps }) {
     observe();
   }, [observe]);
 
-  useEffect(() => {
-    console.log(data);
-  }, [observe]);
 
   return (
     <div className="Content">

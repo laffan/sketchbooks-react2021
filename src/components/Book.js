@@ -60,6 +60,7 @@ function Book({ data, current }) {
           </div>
         </div>
       </div>
+      <div className="Book__ScrollMessage">Scroll »</div>
     </main>
   )
 }
