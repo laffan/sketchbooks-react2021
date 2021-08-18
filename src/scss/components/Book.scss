@@ -1,0 +1,68 @@
+.Book {
+  @include use-lozad();
+  overflow-x: scroll;
+
+  &__Center {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    // width: 999999px;
+    padding-left: 150px;
+  }
+
+  &__Content {
+    // width: 999999px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+
+  &__IntroductionWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+  }
+  &__Introduction {
+
+    h5 {
+      @extend .Sans;
+      margin: 3px 0;
+      font-weight: normal;
+
+      strong {
+        font-weight: bold;
+      }
+    }
+
+    p {
+      @extend .Serif;
+      font-size: 18px;;
+      line-height: 22px;
+    }
+  }
+  &__Pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      // display: inline-block;
+      margin-right: 20px;
+      height: 90vh;
+      max-height: 600px;
+
+      display: inline-flex;
+      align-items: center;
+
+      &:first-child {
+        img {
+          height: 95%;
+        }
+      }
+      img {
+        height: 90%;
+        width: auto;
+      }
+    }
+  }
+}

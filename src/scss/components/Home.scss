@@ -1,0 +1,42 @@
+.Home {
+  @include use-lozad();
+
+  // padding: 30px;
+  padding: 0 30px;
+  overflow: hidden;
+  position: fixed;
+  margin-left: 200px;
+  height: 100vh;
+  width: calc(100vw - 200px);
+
+  &__Wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
+
+  &__Column {
+    // border: 1px solid green;
+    height: 9999px;
+    overflow: hidden;
+    display: block;
+
+    a:hover {
+      opacity: .5;
+    }
+
+    &:nth-child(1){
+      margin-top: -250px;
+    }
+    &:nth-child(2){
+      margin-top: -35px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+  }
+}

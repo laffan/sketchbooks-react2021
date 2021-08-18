@@ -34,3 +34,14 @@
 @mixin clearfix-after() {
   clear: both;
 }
+
+@mixin use-lozad() {
+  .is-Visible {
+    // Lozad.js
+    // border: 1px solid red;
+    opacity: 1;
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+  }
+}
