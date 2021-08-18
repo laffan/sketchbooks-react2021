@@ -16,11 +16,16 @@
     align-items: center;
     height: 100vh;
     padding-left: 150px;
+      overflow-x: scroll;
+
   }
 
   &__Content {
     display: grid;
     grid-template-columns: 300px 1fr;
+    @include no-scrollbars();
+
+
   }
 
   &__IntroductionWrapper {

@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Component } from 'react';
 import { parseISO, format } from 'date-fns'
+import ScrollContainer from 'react-indiana-drag-scroll'
 
 const { REACT_APP_BASE_DIR } = process.env;
 
@@ -29,8 +30,10 @@ function Book({ data, current }) {
   const to = format(parseISO(toISO), 'LLLL	d, yyyy');
   return (
     <main className="Book">
-      <div className="Book__Center">
-        <div className="Book__Content">
+      <ScrollContainer className="Book__Center">
+        < div className="Book__Content">
+
+
           <div className="Book__IntroductionWrapper">
             <div className="Book__Introduction">
 
@@ -58,9 +61,11 @@ function Book({ data, current }) {
               </span>)
             })}
           </div>
-        </div>
+
+
       </div>
-      <div className="Book__ScrollMessage">Scroll »</div>
+        </ScrollContainer >
+      <div className="Book__ScrollMessage">Drag to scroll »</div>
     </main>
   )
 }
