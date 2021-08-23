@@ -1,6 +1,5 @@
-import React, { useEffect, Component } from 'react';
+import React, { useEffect } from 'react';
 import { parseISO, format } from 'date-fns'
-import ScrollContainer from 'react-indiana-drag-scroll'
 
 const { REACT_APP_BASE_DIR } = process.env;
 
