@@ -23,7 +23,7 @@
   &__Content {
     display: grid;
     grid-template-columns: 300px 1fr;
-    @include no-scrollbars();
+    // @include no-scrollbars();
   }
 
   &__IntroductionWrapper {
@@ -53,12 +53,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 900px;
 
     span {
       // display: inline-block;
       margin-right: 20px;
       height: 90vh;
-      max-height: 700px;
+      max-height: 900px;
 
       display: inline-flex;
       align-items: center;

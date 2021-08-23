@@ -10,43 +10,49 @@
       "name": "Red Sennelier",
       "slug": "2009.10.20-2021.11.21--red-sennelier",
       "pages": 27,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+      "maxHeight": 500,
+      "description": "I picked this one up at the actual Magasin Sennelier in Paris, but, because I was in the middle of a years-long obsession with obscure, high-end art supplies, refused to take it out of its cellophane for months. Even once I dared open it the general fanciness of the thing was too much, so I only made it a few pages in befores setting it down for a solid decade.  "
     },
 
     {
       "name": "Moleskine - Purple & Yellow Tape",
       "slug": "2017.04.29-2020.02.19--moleskine-purple-yellow-tape",
       "pages": 25,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+      "description": "This was one of my mom's old moleskines. She used it only a couple times, but her drawings and notes-to-self (see first couple page) I made sure to keep, boxing them in with yellow highlighter.  "
     },
     {
       "name": "Moleskine - Orange Tape",
       "slug": "2016.01.21-2017.04.29--moleskine-orange-tape",
       "pages": 24,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+      "maxHeight": 500,
+      "description": "Purchased a few days after my first experience with psychadelics, the first few pages of this little moleskine feel - at least to me - like wholly new territory, where pattern and abstraction are finally given their due. The effects didn't last terribly log, but it felt like snapping awake after a long grogginess." 
     },
     {
       "name": "Cardboard",
       "slug": "2014.10.23-2015.11.23--cardboard",
       "pages": 15,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
-    },
-    {
-      "name": "Moleskine - Trans Siberian",
-      "slug": "2009.06.24-2009.10.30--moleskine-trans-siberian",
-      "pages": 22,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+      "maxHeight": 700,
+      "description": "Cobbled together from paper scraps during out first stint in New Orleans, this was The Travel Sketchbook for a longish trip through SE Asia, though looking at it now you could hardly tell. Strange time, strange sketches. "
     },
     {
       "name": "Square Black Canvas",
       "slug": "2009.08.30-2009.10.10--square-black-canvas",
       "pages": 25,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+      "maxHeight": 700,
+      "description": "This was picked up while hitchhiking in southern France, and the first few pages depict the various couches that I was living on at the time.  I was still (clearly) enamoured with the early sketchbooks of James Jean, and spent a lot of time trying to dream up characters to keep things from feeling too dry."
+    },
+    {
+      "name": "Moleskine - Trans Siberian",
+      "slug": "2009.06.24-2009.10.30--moleskine-trans-siberian",
+      "pages": 22,
+      "maxHeight": 600,
+      "description": "In 2009 I joined a friend on a month-long trip across Asia on the Trans-Siberian railroad. On our last stop, in St. Peterburg, I managed to get my camera stolen, and so this is the only real record of that trip.  A mixture of the surreal and the specific, which feels appropriate to that period. "
     },
     {
       "name": "Moleskine - Portland",
       "slug": "2009.01.08-2009.03.25--moleskine-portland",
       "pages": 22,
+      "maxHeight": 600,
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
     },
 
@@ -54,13 +60,15 @@
       "name": "Green Canvas",
       "slug": "2007.12.10-2008.01.19--green-canvas",
       "pages": 17,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+      "maxHeight": 700,
+      "description": "The last sketchbook that I would bind for myself for ... quite a while. It followed me from from Siena to Canaan to Minneapolis."
     },
     {
       "name": "Moleskine - Boggy Meadow",
       "slug": "2007.06.27-2007.09.13--moleskine-boggy-meadow",
       "pages": 19,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+      "maxHeight": 600,
+      "description": "The first sketchbook filled after coming back from Italy, it documents a life spent largely hanging out at Peet's coffee and Tea, watching the world go by, and feel frustrated that I'm not James Jean."
     }
   ]
 }
